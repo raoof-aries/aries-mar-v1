@@ -1,10 +1,24 @@
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
       <div className="navbar-logo-wrapper">
-        <div className="navbar-logo-text">Aries Mar</div>
+        <Link to="/" className="navbar-logo-text">Aries Mar</Link>
       </div>
       <div className="navbar-links">
         <a href="#" className="navbar-link">
@@ -13,9 +27,9 @@ const Navbar = () => {
         <a href="#" className="navbar-link">
           Training
         </a>
-        <a href="#" className="navbar-link">
+        <Link to="/service/maritime-consulting" className="navbar-link">
           Services
-        </a>
+        </Link>
         <a href="#" className="navbar-link">
           Careers
         </a>

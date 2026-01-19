@@ -1,0 +1,106 @@
+{
+  "services": [
+    {
+      "id": "service-1",
+      "slug": "maritime-consulting",
+      "title": "Maritime Consulting Services",
+      "description": "Expert maritime consulting solutions for your business needs",
+      "blocks": [
+        {
+          "type": "heading",
+          "content": "Our Maritime Consulting Expertise",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "content": "We provide comprehensive maritime consulting services that help businesses navigate complex challenges in the marine industry. Our team of experts brings decades of experience to every project, ensuring that your maritime operations are efficient, compliant, and optimized for success."
+        },
+        {
+          "type": "image",
+          "url": "/src/assets/images/home/hero.webp",
+          "alt": "Maritime Consulting Services",
+          "caption": "Expert maritime consulting services"
+        },
+        {
+          "type": "heading",
+          "content": "Key Services",
+          "level": 3
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Port and Harbor Development Planning",
+            "Marine Safety and Risk Assessment",
+            "Regulatory Compliance Consulting",
+            "Vessel Operations Optimization",
+            "Environmental Impact Studies",
+            "Maritime Training and Certification"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Our consulting approach combines technical expertise with practical industry knowledge to deliver solutions that are both innovative and implementable. We work closely with our clients to understand their unique challenges and develop customized strategies."
+        },
+        {
+          "type": "heading",
+          "content": "Why Choose Us?",
+          "level": 3
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "27+ years of industry experience",
+            "Proven track record with 132K+ projects",
+            "Global client base of 11.4K+ companies",
+            "Comprehensive service portfolio",
+            "Commitment to safety and excellence"
+          ]
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "quote",
+          "content": "Excellence in maritime solutions requires a deep understanding of both the technical and operational aspects of the industry.",
+          "author": "Our Expert Team"
+        }
+      ]
+    },
+    {
+      "id": "service-2",
+      "slug": "vessel-management",
+      "title": "Vessel Management Services",
+      "description": "Complete vessel management solutions for optimal performance",
+      "blocks": [
+        {
+          "type": "heading",
+          "content": "Comprehensive Vessel Management",
+          "level": 2
+        },
+        {
+          "type": "paragraph",
+          "content": "Our vessel management services ensure your fleet operates at peak efficiency while maintaining the highest standards of safety and compliance. We handle everything from daily operations to strategic planning."
+        },
+        {
+          "type": "heading",
+          "content": "Our Management Services",
+          "level": 3
+        },
+        {
+          "type": "numbered-list",
+          "items": [
+            "24/7 Operational Support",
+            "Maintenance and Repair Coordination",
+            "Crew Management and Training",
+            "Regulatory Compliance Management",
+            "Performance Monitoring and Reporting"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "With our comprehensive approach, you can focus on your core business while we handle the complexities of vessel management."
+        }
+      ]
+    }
+  ]
+}
