@@ -1,0 +1,102 @@
+{
+  "visions": [
+    {
+      "id": "offshore-naval-engineering",
+      "title": "Offshore Naval Architecture & Engineering",
+      "categories": [
+        {
+          "id": "offshore",
+          "name": "Offshore",
+          "services": [
+            "Design and Analysis of Fixed and Floating Offshore Units",
+            "Engineering For Conversion/Upgrade Of Offshore Assets",
+            "Life Extension Studies",
+            "Finite Element Analysis (fea/fem)",
+            "Global Strength Assesssment Of Offshore Structures",
+            "Subsea Analysis And Simulations",
+            "Feed Studies",
+            "Mooring And Berthing Analysis",
+            "Inplace, Preservice, Installation, Fatigue",
+            "Offshore Decommissioning"
+          ]
+        },
+        {
+          "id": "naval-architecture",
+          "name": "Naval architecture",
+          "services": [
+            "Marine Consultancy",
+            "New Build Designs",
+            "Conversion Engineering",
+            "Loadout And Seatransportation Engineering",
+            "Stability Calculations",
+            "Hydrodynamic Analysis",
+            "Statutory Plans And Calculations",
+            "Marine Technical Documentation",
+            "Loading Software",
+            "Finite element analysis"
+          ]
+        },
+        {
+          "id": "engineering",
+          "name": "Engineering",
+          "services": [
+            "Green Solutions",
+            "Electrical, Instrumentation and Telecom",
+            "Ex Surveys",
+            "Installation and Commissioning",
+            "Design of Piping Systems",
+            "Structural Analysis",
+            "3D Laser Scanning",
+            "3D Modelling",
+            "Visual Asset Management",
+            "Asset Integrity Management Services",
+            "Detail Engineering Services",
+            "Ballast Water Treatment System Installation",
+            "Exhaust Gas Scrubber Retrofits",
+            "Project Management",
+            "Marine Warranty Services (MWS)",
+            "Marine Surveys",
+            "Aerial Drone Survey & Inspection",
+            "Underwater Inspections",
+            "Inventory Of Hazardous Materials (IHM)",
+            "Hydraulics",
+            "Aries Trading and Equipment (ARTEQ)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inspection-maintenance",
+      "title": "Inspection And Maintenance",
+      "categories": [
+        {
+          "id": "inspection",
+          "name": "Inspection",
+          "services": [
+            "Advanced NDT Services",
+            "HVAC & Accommodation Refurbishment",
+            "Conventional NDT",
+            "UT Gauging",
+            "Rope Access",
+            "Lifting Equipment Inspection & certification",
+            "Marking Services",
+            "Predictive Maintenance Survey",
+            "Civil Condition Assessment and Evaluation",
+            "Third Party Inspection",
+            "OCTG Inspection",
+            "Mechanical Testing & Advanced Metallurgical Lab",
+            "Calibration Services",
+            "Asset Integrity Inspection",
+            "Cathodic Protection",
+            "Fairground inspection",
+            "Civil Testing Lab",
+            "Helium Leak Testing (LT)",
+            "Aviation Inspections",
+            "Environmental Survey",
+            "LDAR Surveys & EU Regulations"
+          ]
+        }
+      ]
+    }
+  ]
+}
