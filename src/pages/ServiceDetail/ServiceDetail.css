@@ -71,7 +71,7 @@
 
 /* Content Container */
 .service-detail-container {
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 0 auto;
   padding: 6rem 4rem;
   background-color: #ffffff;
