@@ -1,9 +1,10 @@
-import { HeroSection } from "../../containers";
+import { HeroSection, KeyFeatures } from "../../containers";
 
 const Home = () => {
   return (
     <div>
       <HeroSection />
+      <KeyFeatures />
     </div>
   );
 };
