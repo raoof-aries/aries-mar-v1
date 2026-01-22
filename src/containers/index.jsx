@@ -4,3 +4,4 @@ export { default as Footer } from "./footer/Footer";
 export { default as HeroSection } from "./home/HeroSection/HeroSection";
 export { default as KeyFeatures } from "./home/KeyFeatures/KeyFeatures";
 export { default as AboutSection } from "./home/AboutSection/AboutSection";
+export { default as Solutions } from "./home/Solutions/Solutions";
