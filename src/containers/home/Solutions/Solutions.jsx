@@ -27,8 +27,8 @@ const Solutions = () => {
         <div className="solutions-layout">
           <div className="solutions-header">
             <span className="section-label">OUR SOLUTIONS</span>
-            <h2 className="section-title">Key Solutions</h2>
-            <p className="section-subtitle">
+            <h2 className="section-title-solution">Key Solutions</h2>
+            <p className="section-subtitle-solution">
               Specialized maritime solutions designed to address complex challenges and deliver exceptional results
             </p>
           </div>

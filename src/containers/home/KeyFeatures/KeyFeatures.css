@@ -50,7 +50,7 @@
 .section-title {
   font-size: 56px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #1a1a1a !important;
   margin-bottom: 20px;
   line-height: 1.2;
   letter-spacing: -1px;
@@ -58,7 +58,7 @@
 
 .section-subtitle {
   font-size: 19px;
-  color: #6b7280;
+  color: #6b7280 !important;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.7;
@@ -161,19 +161,19 @@
 .feature-title {
   font-size: 22px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #1a1a1a !important;
   margin-bottom: 16px;
   line-height: 1.4;
   transition: color 0.3s ease;
 }
 
 .feature-card:hover .feature-title {
-  color: #0a4d68;
+  color: #0a4d68 !important;
 }
 
 .feature-description {
   font-size: 15px;
-  color: #6b7280;
+  color: #6b7280 !important;
   line-height: 1.7;
   margin-bottom: 24px;
   flex: 1;
