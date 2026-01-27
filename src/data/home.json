@@ -1,0 +1,132 @@
+{
+  "hero": {
+    "heading": {
+      "line1": "Excellence in Maritime",
+      "line2": "Solutions & Services"
+    },
+    "description": "We deliver world-class marine solutions with an understanding of industry needs, a focus on safety and efficiency, and a commitment to operational excellence.",
+    "buttons": {
+      "primary": {
+        "text": "Get in Touch",
+        "link": "#contact"
+      },
+      "secondary": {
+        "text": "Learn more",
+        "link": "#about"
+      }
+    },
+    "bottomDescription": "Providing comprehensive marine services that respond to real operational needs and challenging environments, with a focus on reliability, expertise, and sustained value.",
+    "stats": [
+      {
+        "number": "27+",
+        "label": "Years of Excellence"
+      },
+      {
+        "number": "132K+",
+        "label": "Projects Completed"
+      },
+      {
+        "number": "11.4K+",
+        "label": "Global Clients"
+      }
+    ],
+    "backgroundImage": "/src/assets/images/home/hero.webp"
+  },
+  "about": {
+    "label": "WHO WE ARE",
+    "title": "Aries Marine & Engg. Services Pvt Ltd",
+    "description": "Aries is the largest Engineering, Inspection & Maintenance firm in the Middle East. Founded by Dr. Sohan Roy in 1998, Aries Marine is the flagship brand of Aries Group, a world-class consortium of diversified independent firms. Headquartered in Sharjah, UAE, this ISO 9001:2015, ISO 14001:2015, ISO 29001:2020 & ISO 45001:2018 certified company has business branches in UAE, Angola, Azerbaijan, Bahrain, Brunei, China, Germany, Guyana, India, Indonesia, Kuwait, Madagascar, Malaysia, Nepal, Oman, Qatar, Saudi Arabia, Singapore, South Africa, Turkey, UK, USA, Sri Lanka, Greece, Netherlands, Japan, Nigeria, Vietnam, Morocco.",
+    "certifications": {
+      "title": "Our Certifications",
+      "subtitle": "Internationally recognized quality standards",
+      "items": [
+        {
+          "code": "9001",
+          "year": "2015"
+        },
+        {
+          "code": "14001",
+          "year": "2015"
+        },
+        {
+          "code": "29001",
+          "year": "2020"
+        },
+        {
+          "code": "45001",
+          "year": "2018"
+        }
+      ]
+    }
+  },
+  "keyFeatures": {
+    "label": "WHAT WE OFFER",
+    "title": "Our Core Services",
+    "subtitle": "Comprehensive marine solutions designed to meet the evolving challenges of modern maritime operations",
+    "features": [
+      {
+        "number": "01",
+        "title": "Inspection & Risk Management",
+        "description": "The risks associated with offshore, oil & gas and marine sectors are usually high, difficult and complicated.",
+        "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop",
+        "link": "#"
+      },
+      {
+        "number": "02",
+        "title": "Remedial Engineering Management",
+        "description": "Aries values in the efficiency of design and are committed to providing effective solutions for complex engineering challenges.",
+        "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&auto=format&fit=crop",
+        "link": "#"
+      },
+      {
+        "number": "03",
+        "title": "Digital Solutions & Cyber Management",
+        "description": "Utilization of the latest technology in our services has been utmost priority to ensure operational excellence and security.",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop",
+        "link": "#"
+      },
+      {
+        "number": "04",
+        "title": "Warranty & Audit Advisory Solutions",
+        "description": "Aries advisory and warranty services are designed to cover the comprehensive needs of marine and offshore operations.",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop",
+        "link": "#"
+      },
+      {
+        "number": "05",
+        "title": "Integrity Management",
+        "description": "Efficient management of Assets is becoming a critical factor directly impacting operational performance and safety.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
+        "link": "#"
+      },
+      {
+        "number": "06",
+        "title": "Products & Technology Management",
+        "description": "Aries provides management of the changes, impacts or upgrades on products and technology throughout the asset lifecycle.",
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&auto=format&fit=crop",
+        "link": "#"
+      }
+    ]
+  },
+  "solutions": {
+    "label": "OUR SOLUTIONS",
+    "title": "Key Solutions",
+    "subtitle": "Specialized maritime solutions designed to address complex challenges and deliver exceptional results",
+    "items": [
+      {
+        "id": 1,
+        "title": "Offshore Naval Architecture Engineering",
+        "description": "Aries Marine provides reliable services ranging from technical consultancy to project management and boasts an extensive list of successful offshore projects.",
+        "image": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=800&h=600&fit=crop",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "title": "Inspection & Maintenance",
+        "description": "Inspection & Maintenance department is the leading & comprehensive service provider with advanced & compatible techniques to meet the industry standards.",
+        "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop",
+        "link": "#"
+      }
+    ]
+  }
+}

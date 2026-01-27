@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import servicesMenuData from "../../data/servicesMenu.json";
+import { useSelector } from "react-redux";
 import "./ServicesMenu.css";
 
 const ServicesMenu = ({ isOpen, onClose }) => {
   const [selectedVision, setSelectedVision] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState(0);
+  const servicesMenuData = useSelector((state) => state.cms.servicesMenu);
 
   useEffect(() => {
     if (isOpen) {
@@ -35,12 +36,16 @@ const ServicesMenu = ({ isOpen, onClose }) => {
   }, [isOpen, onClose]);
 
   useEffect(() => {
-    if (isOpen && servicesMenuData.visions[selectedVision]) {
+    if (
+      isOpen &&
+      servicesMenuData?.visions &&
+      servicesMenuData.visions[selectedVision]
+    ) {
       setSelectedCategory(0);
     }
-  }, [selectedVision, isOpen]);
+  }, [selectedVision, isOpen, servicesMenuData]);
 
-  if (!isOpen) return null;
+  if (!isOpen || !servicesMenuData?.visions) return null;
 
   const currentVision = servicesMenuData.visions[selectedVision];
   const currentCategory = currentVision?.categories[selectedCategory];

@@ -1,0 +1,58 @@
+{
+  "company": {
+    "name": "Aries e-Solutions",
+    "shortName": "Aries Mar",
+    "fullName": "Aries Marine & Engg. Services Pvt Ltd"
+  },
+  "navbar": {
+    "logo": "Aries Mar",
+    "links": [
+      {
+        "text": "Who We Are",
+        "href": "#about"
+      },
+      {
+        "text": "Training",
+        "href": "#training"
+      },
+      {
+        "text": "Services",
+        "href": "#services",
+        "hasMenu": true
+      },
+      {
+        "text": "Careers",
+        "href": "#careers"
+      },
+      {
+        "text": "Contact Us",
+        "href": "#contact"
+      }
+    ]
+  },
+  "footer": {
+    "companyName": "Aries e-Solutions",
+    "socialLinks": [
+      {
+        "name": "Facebook",
+        "url": "https://facebook.com",
+        "icon": "facebook"
+      },
+      {
+        "name": "X (Twitter)",
+        "url": "https://x.com",
+        "icon": "twitter"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com",
+        "icon": "linkedin"
+      }
+    ]
+  },
+  "contact": {
+    "address": "Sharjah, UAE",
+    "email": "info@ariesmarine.com",
+    "phone": "+971-XXX-XXXX"
+  }
+}

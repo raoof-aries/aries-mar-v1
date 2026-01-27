@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import ServicesMenu from "./ServicesMenu";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false);
+  const navbar = useSelector((state) => state.cms.global.navbar);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,28 +32,19 @@ const Navbar = () => {
     <>
       <nav className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
         <div className="navbar-logo-wrapper">
-          <Link to="/" className="navbar-logo-text">Aries Mar</Link>
+          <Link to="/" className="navbar-logo-text">{navbar.logo}</Link>
         </div>
         <div className="navbar-links">
-          <a href="#" className="navbar-link">
-            Who We Are
-          </a>
-          <a href="#" className="navbar-link">
-            Training
-          </a>
-          <a
-            href="#"
-            className="navbar-link"
-            onClick={handleServicesClick}
-          >
-            Services
-          </a>
-          <a href="#" className="navbar-link">
-            Careers
-          </a>
-          <a href="#" className="navbar-link">
-            Contact Us
-          </a>
+          {navbar.links.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              className="navbar-link"
+              onClick={link.hasMenu ? handleServicesClick : undefined}
+            >
+              {link.text}
+            </a>
+          ))}
         </div>
       </nav>
       <ServicesMenu isOpen={isServicesMenuOpen} onClose={handleCloseServicesMenu} />

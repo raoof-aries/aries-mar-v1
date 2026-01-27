@@ -1,12 +1,37 @@
-# CMS Service Pages Guide
+# CMS Guide
 
-This project uses a **JSON-based CMS** system - no backend required! All service content is stored in a JSON file that you can edit directly.
+This project uses a **JSON-based CMS** system - no backend required! All content is stored in JSON files that you can edit directly.
 
 ## How It Works
 
-- **Data Storage**: `src/data/services.json` - Edit this file to manage all service content
-- **Frontend**: React components automatically render the content from the JSON file
-- **No Backend**: Everything runs client-side, no server needed!
+- **Service Pages**: `src/data/services.json` - Edit this file to manage all service content
+- **Homepage Sections**: `src/data/home.json` - Edit this file to manage homepage content (hero, about, features, solutions)
+- **Global Site Data**: `src/data/global.json` - Edit this file to manage site-wide content (navbar, footer, company info)
+- **Services Menu**: `src/data/servicesMenu.json` - Edit this file to manage the structure of the Services mega menu
+- **Redux Store**: All JSON data is loaded once into a Redux Toolkit slice (`cmsSlice`), and components read from the store using `useSelector`
+- **No Backend**: Everything runs client-side, no server needed (API can be added later without changing components)!
+
+## Data Files Overview
+
+### 1. `home.json` - Homepage Sections
+Contains all data for homepage sections:
+- **Hero Section**: Heading, description, buttons, stats (metrics)
+- **About Section**: Company info, description, certifications
+- **Key Features**: Features list with titles, descriptions, images
+- **Solutions**: Solutions list with titles, descriptions, images
+
+### 2. `global.json` - Site-Wide Data
+Contains data used across the entire site:
+- **Company Info**: Company name, short name, full name
+- **Navbar**: Logo text, navigation links
+- **Footer**: Company name, social media links
+- **Contact**: Address, email, phone (for future use)
+
+### 3. `services.json` - Service Pages
+Contains dynamic service page content (see Service Pages section below)
+
+### 4. `servicesMenu.json` - Services Mega Menu
+Controls the hierarchical structure of the Services menu (visions, categories, and service list items).
 
 ## Quick Start
 
@@ -215,9 +240,154 @@ To add a new block type:
    }
    ```
 
+## Editing Homepage Content
+
+### Hero Section (`home.json` → `hero`)
+
+Edit metrics, headings, descriptions, and button text:
+
+```json
+{
+  "hero": {
+    "heading": {
+      "line1": "Excellence in Maritime",
+      "line2": "Solutions & Services"
+    },
+    "description": "Your description here...",
+    "buttons": {
+      "primary": {
+        "text": "Get in Touch",
+        "link": "#contact"
+      },
+      "secondary": {
+        "text": "Learn more",
+        "link": "#about"
+      }
+    },
+    "stats": [
+      {
+        "number": "27+",
+        "label": "Years of Excellence"
+      }
+    ]
+  }
+}
+```
+
+### About Section (`home.json` → `about`)
+
+Edit company info, description, and certifications:
+
+```json
+{
+  "about": {
+    "label": "WHO WE ARE",
+    "title": "Company Name",
+    "description": "Company description...",
+    "certifications": {
+      "title": "Our Certifications",
+      "subtitle": "Subtitle text",
+      "items": [
+        {
+          "code": "9001",
+          "year": "2015"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Key Features (`home.json` → `keyFeatures`)
+
+Edit features list:
+
+```json
+{
+  "keyFeatures": {
+    "label": "WHAT WE OFFER",
+    "title": "Our Core Services",
+    "subtitle": "Subtitle text",
+    "features": [
+      {
+        "number": "01",
+        "title": "Feature Title",
+        "description": "Feature description...",
+        "image": "https://example.com/image.jpg",
+        "link": "#"
+      }
+    ]
+  }
+}
+```
+
+### Solutions (`home.json` → `solutions`)
+
+Edit solutions list:
+
+```json
+{
+  "solutions": {
+    "label": "OUR SOLUTIONS",
+    "title": "Key Solutions",
+    "subtitle": "Subtitle text",
+    "items": [
+      {
+        "id": 1,
+        "title": "Solution Title",
+        "description": "Solution description...",
+        "image": "https://example.com/image.jpg",
+        "link": "#"
+      }
+    ]
+  }
+}
+```
+
+## Editing Global Site Data
+
+### Navbar (`global.json` → `navbar`)
+
+Edit navigation links and logo:
+
+```json
+{
+  "navbar": {
+    "logo": "Aries Mar",
+    "links": [
+      {
+        "text": "Who We Are",
+        "href": "#about",
+        "hasMenu": false
+      }
+    ]
+  }
+}
+```
+
+### Footer (`global.json` → `footer`)
+
+Edit footer company name and social links:
+
+```json
+{
+  "footer": {
+    "companyName": "Aries e-Solutions",
+    "socialLinks": [
+      {
+        "name": "Facebook",
+        "url": "https://facebook.com",
+        "icon": "facebook"
+      }
+    ]
+  }
+}
+```
+
 ## Routes
 
-- `/service/:slug` - Display a service page
+- `/` - Homepage (uses `home.json` via Redux store)
+- `/service/:slug` - Display a service page (uses `services.json` via Redux store)
   - Example: `/service/maritime-consulting`
   - Example: `/service/vessel-management`
 

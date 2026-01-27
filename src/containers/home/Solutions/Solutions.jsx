@@ -1,40 +1,24 @@
 import React from "react";
 import "./Solutions.css";
+import { useSelector } from "react-redux";
 
 const Solutions = () => {
-  const solutions = [
-    {
-      id: 1,
-      title: "Offshore Naval Architecture Engineering",
-      description:
-        "Aries Marine provides reliable services ranging from technical consultancy to project management and boasts an extensive list of successful offshore projects.",
-      image:
-        "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=800&h=600&fit=crop",
-    },
-    {
-      id: 2,
-      title: "Inspection & Maintenance",
-      description:
-        "Inspection & Maintenance department is the leading & comprehensive service provider with advanced & compatible techniques to meet the industry standards.",
-      image:
-        "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop",
-    },
-  ];
+  const solutions = useSelector((state) => state.cms.home.solutions);
 
   return (
     <section className="solutions-section">
       <div className="solutions-container">
         <div className="solutions-layout">
           <div className="solutions-header">
-            <span className="section-label">OUR SOLUTIONS</span>
-            <h2 className="section-title-solution">Key Solutions</h2>
+            <span className="section-label">{solutions.label}</span>
+            <h2 className="section-title-solution">{solutions.title}</h2>
             <p className="section-subtitle-solution">
-              Specialized maritime solutions designed to address complex challenges and deliver exceptional results
+              {solutions.subtitle}
             </p>
           </div>
 
           <div className="solutions-cards">
-            {solutions.map((solution, index) => (
+            {solutions.items.map((solution, index) => (
               <div key={solution.id} className="solution-card">
                 <div className="solution-card-inner">
                   <div className="solution-image-wrapper">
@@ -51,7 +35,7 @@ const Solutions = () => {
                   <div className="solution-content">
                     <h3 className="solution-title">{solution.title}</h3>
                     <p className="solution-description">{solution.description}</p>
-                    <a href="#" className="solution-link">
+                    <a href={solution.link} className="solution-link">
                       <span>Read more</span>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path

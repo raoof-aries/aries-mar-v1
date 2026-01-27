@@ -1,12 +1,16 @@
-import { useParams } from 'react-router-dom';
-import { getServiceById } from '../../services/serviceApi';
-import ContentBlock from '../../components/ContentBlocks/ContentBlock';
-import HeroImage from '../../assets/images/home/hero.webp';
-import './ServiceDetail.css';
+import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import ContentBlock from "../../components/ContentBlocks/ContentBlock";
+import HeroImage from "../../assets/images/home/hero.webp";
+import "./ServiceDetail.css";
 
 const ServiceDetail = () => {
   const { slug } = useParams();
-  const service = getServiceById(slug);
+  const service = useSelector((state) =>
+    state.cms.services.find(
+      (s) => s.slug === slug || s.id === slug
+    )
+  );
 
   if (!service) {
     return (

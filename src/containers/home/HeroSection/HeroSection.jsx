@@ -1,7 +1,10 @@
 import "./HeroSection.css";
 import HeroImage from "../../../assets/images/home/hero.webp";
+import { useSelector } from "react-redux";
 
 const HeroSection = () => {
+  const hero = useSelector((state) => state.cms.home.hero);
+
   return (
     <div className="hero-container">
       {/* Background Image */}
@@ -15,22 +18,22 @@ const HeroSection = () => {
         {/* Main Content Area */}
         <div className="hero-main-content">
           <h1 className="hero-heading">
-            Excellence in Maritime
+            {hero.heading.line1}
             <br />
-            Solutions & Services
+            {hero.heading.line2}
           </h1>
 
           <p className="hero-description">
-            We deliver world-class marine solutions with an understanding of
-            industry needs, a focus on safety and efficiency, and a commitment
-            to operational excellence.
+            {hero.description}
           </p>
 
           <div className="hero-buttons">
-            <button className="hero-btn hero-btn-primary">
-              Get in Touch <span className="btn-arrow">→</span>
-            </button>
-            <button className="hero-btn hero-btn-secondary">Learn more</button>
+            <a href={hero.buttons.primary.link} className="hero-btn hero-btn-primary">
+              {hero.buttons.primary.text} <span className="btn-arrow">→</span>
+            </a>
+            <a href={hero.buttons.secondary.link} className="hero-btn hero-btn-secondary">
+              {hero.buttons.secondary.text}
+            </a>
           </div>
         </div>
 
@@ -38,27 +41,17 @@ const HeroSection = () => {
         <div className="hero-bottom">
           <div className="hero-bottom-description">
             <p>
-              Providing comprehensive marine services that respond to real
-              operational needs and challenging environments, with a focus on
-              reliability, expertise, and sustained value.
+              {hero.bottomDescription}
             </p>
           </div>
 
           <div className="hero-stats-grid">
-            <div className="hero-stat-card">
-              <div className="hero-stat-number">27+</div>
-              <div className="hero-stat-label">Years of Excellence</div>
-            </div>
-
-            <div className="hero-stat-card">
-              <div className="hero-stat-number">132K+</div>
-              <div className="hero-stat-label">Projects Completed</div>
-            </div>
-
-            <div className="hero-stat-card">
-              <div className="hero-stat-number">11.4K+</div>
-              <div className="hero-stat-label">Global Clients</div>
-            </div>
+            {hero.stats.map((stat, index) => (
+              <div key={index} className="hero-stat-card">
+                <div className="hero-stat-number">{stat.number}</div>
+                <div className="hero-stat-label">{stat.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
